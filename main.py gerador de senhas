@@ -1,0 +1,15 @@
+import random
+
+numero = random.randint(1, 20)
+
+for i in range(5):
+    # O int() converte o texto digitado em número
+    chute = int(input("Tente adivinhar o número: "))
+
+    if chute < numero:
+        print("Tente um número MAIOR")
+    elif chute > numero:
+        print("Tente um número MENOR")
+    else:
+        print("Parabéns, você acertou!")
+        break
